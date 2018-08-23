@@ -5,27 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Metal Attack</title>
 
 </head>
 
 <body>
+  <h1>Metal Attack!</h1>
+  <h3>Choose Your Avatar</h3>
+
   <div class="container">
-    <div id="tom-araya" class="player-img">
-      <img src="assets/images/tom-araya.jpg">Tom Araya
-    </div>
-    <div id="scott-ian" class="player-img">
-      <img src="assets/images/scott-ian.jpg">Scott Ian
-    </div>
-    <div id="dave-mustaine" class="player-img">
-      <img src="assets/images/dave-mustaine.jpg">Dave Mustaine
-    </div>
-    <div id="alex-skolnick" class="player-img">
-      <img src="assets/images/alex-skolnick.jpg">Alex Skolnick
+    <div class="row">
+      <div id="tom-araya" class="tile">
+        <img class="player-img" src="assets/images/tom-araya.jpg">
+        <button class="character-name">Tom Araya</button>
+      </div>
+      <div id="scott-ian" class="tile">
+        <img class="player-img" src="assets/images/scott-ian.jpg">
+        <button class="character-name">Scott Ian</button>
+      </div>
+      <div id="dave-mustaine" class="tile">
+        <img class="player-img" src="assets/images/dave-mustaine.jpg">
+        <button class="character-name">Dave Mustaine</button>
+      </div>
+      <div id="alex-skolnick" class="tile">
+        <img class="player-img" src="assets/images/alex-skolnick.jpg">
+        <button class="character-name">Alex Skolnick</button>
+      </div>
     </div>
   </div>
+
+  <script src="assets/javascript/game.js"></script>
 </body>
 
 </html>
