@@ -1,76 +1,15 @@
-.player-img {
-  /* border: 1px solid #ddd; */
-  border: 3px solid #b30000;
-  border-radius: 95px;
-  /* padding: 5px; */
-  /* margin: 25px; */
-  width: 200px;
-  height: 175px;
-  /* float: left; */
-}
-
-.tile {
-  position: relative;
-  /* float: left; */
-  /* margin: 3px 16px 16px 16px; */
-  width: 215px;
-  height: 190px;
-}
-
-/* Make the image responsive */
-.tile img {
-  width: 100%;
-  /* height: auto; */
-}
-
-.character-name {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #b30000;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+body {
+  width: 960px;
+  margin: auto;
+  /* text-align: center; */
 }
 
 .container {
-  position: absolute;
-  width: 290px;
-  margin: auto;
   text-align: center;
 }
 
-h2 {
-  font-size: 50px;
-}
-
-div {
-  text-align: center;
-}
-
-.band-image {
-  width: 250px;
-  height: 200px;
-  border-radius: 25px;
-}
-
-#band-div {
-  width: 300px;
-  padding: 20px;
-  margin-left: 10px;
-}
-
-#game-section {
-  float: left;
-  width: 300px;
-  height: 750px;
-  padding: 20px;
-  margin-bottom: 50px;
-  border: 7px dotted #f5f5f5;
-  box-shadow: inset 0 -3px 0 0 #f5f5f5, 0 3px 0 0 #f5f5f5;
+.player-img {
+  width: 195px;
+  height: 160px;
+  border-radius: 95%;
 }

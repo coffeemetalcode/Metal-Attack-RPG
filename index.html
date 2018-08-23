@@ -19,23 +19,47 @@
   <h1>Metal Attack!</h1>
   <h3>Choose Your Avatar</h3>
 
+  <!-- Game Characters -->
+  <!-- This should be populated by jQuery commands?? -->
+  <div id="available">
+    <div class="container">
+      <div class="row">
+        <div id="tom-araya" class="col-sm-3">
+          <img class="player-img" src="assets/images/tom-araya.jpg">
+          <div>Tom Araya</div>
+        </div>
+        <div id="scott-ian" class="col-sm-3">
+          <img class="player-img" src="assets/images/scott-ian.jpg">
+          <div>Scott Ian</div>
+        </div>
+        <div id="dave-mustaine" class="col-sm-3">
+          <img class="player-img" src="assets/images/dave-mustaine.jpg">
+          <div>Dave Mustaine</div>
+        </div>
+        <div class="col-sm-3">
+          <img id="alex-skolnick" class="player-img" src="assets/images/alex-skolnick.jpg">
+          <div>Alex Skolnick</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
   <div class="container">
     <div class="row">
-      <div id="tom-araya" class="tile">
-        <img class="player-img" src="assets/images/tom-araya.jpg">
-        <button class="character-name">Tom Araya</button>
+      <div class="col-sm-4">
+        <div id="player-character">
+          Your Player
+        </div>
       </div>
-      <div id="scott-ian" class="tile">
-        <img class="player-img" src="assets/images/scott-ian.jpg">
-        <button class="character-name">Scott Ian</button>
+      <div class="col-sm-4">
+        Attack Button Here
       </div>
-      <div id="dave-mustaine" class="tile">
-        <img class="player-img" src="assets/images/dave-mustaine.jpg">
-        <button class="character-name">Dave Mustaine</button>
-      </div>
-      <div id="alex-skolnick" class="tile">
-        <img class="player-img" src="assets/images/alex-skolnick.jpg">
-        <button class="character-name">Alex Skolnick</button>
+      <div class="col-sm-4">
+        <div id="current-enemy">
+          Current Opponent
+        </div>
       </div>
     </div>
   </div>
