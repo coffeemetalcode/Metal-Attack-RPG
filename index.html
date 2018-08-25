@@ -17,29 +17,25 @@
 
 <body>
   <h1>Metal Attack!</h1>
-  <h3>Choose Your Avatar</h3>
+  <h2 id="board-message"></h2>
 
-  <!-- Game Characters -->
-  <!-- This should be populated by jQuery commands?? -->
-  <div id="available">
-    <div class="container">
-      <div class="row">
-        <div id="tom-araya" class="col-sm-3">
-          <img class="player-img" src="assets/images/tom-araya.jpg">
-          <div>Tom Araya</div>
-        </div>
-        <div id="scott-ian" class="col-sm-3">
-          <img class="player-img" src="assets/images/scott-ian.jpg">
-          <div>Scott Ian</div>
-        </div>
-        <div id="dave-mustaine" class="col-sm-3">
-          <img class="player-img" src="assets/images/dave-mustaine.jpg">
-          <div>Dave Mustaine</div>
-        </div>
-        <div class="col-sm-3">
-          <img id="alex-skolnick" class="player-img" src="assets/images/alex-skolnick.jpg">
-          <div>Alex Skolnick</div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="available-player">
+        <div id="player-1" class="col-sm-3"></div>
+        <div id="player-1-info"></div>
+      </div>
+      <div class="available-player">
+        <div id="player-2" class="col-sm-3"></div>
+        <div id="player-2-info"></div>
+      </div>
+      <div class="available-player">
+        <div id="player-3" class="col-sm-3"></div>
+        <div id="player-3-info"></div>
+      </div>
+      <div class="available-player">
+        <div id="player-4" class="col-sm-3"></div>
+        <div id="player-4-info"></div>
       </div>
     </div>
   </div>
@@ -48,23 +44,17 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <div id="player-character">
-          Your Player
-        </div>
-      </div>
-      <div class="col-sm-4">
-        Attack Button Here
-      </div>
-      <div class="col-sm-4">
-        <div id="current-enemy">
-          Current Opponent
-        </div>
-      </div>
+      <div id="player-character" class="col-sm-4"></div>
+      <div id="player-character-info"></div>
     </div>
+    <div id="attack-btn" class="col-sm-4"></div>
+    <div id="current-enemy" class="col-sm-4"></div>
+    <div id="current-enemy-info"></div>
+  </div>
+  </div>
   </div>
 
-  <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/game.js "></script>
 </body>
 
 </html>

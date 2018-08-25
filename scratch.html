@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Metal Attack</title>
+
+</head>
+
+<body>
+  <h1>Metal Attack!</h1>
+  <h3>Choose Your Avatar</h3>
+
+  <!-- Game Characters -->
+  <!-- This should be populated by jQuery commands?? -->
+  <div id="available">
+    <div class="container">
+      <div class="row">
+        <div>
+          <div id="player-1" class="col-sm-3"></div>
+          <div id="player-1-info"></div>
+        </div>
+        <div>
+          <div id="player-2" class="col-sm-3"></div>
+          <div id="player-2-info"></div>
+        </div>
+        <div>
+          <div id="player-3" class="col-sm-3"></div>
+          <div id="player-3-info"></div>
+        </div>
+        <div>
+          <div id="player-3" class="col-sm-3"></div>
+          <div id="player-3-info"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="current-player">
+          Your Player
+        </div>
+      </div>
+      <div class="col-sm-4">
+        Attack Button Here
+      </div>
+      <div class="col-sm-4">
+        <div id="current-enemy">
+          Current Opponent
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var contestants = {
+      tomAraya: {
+        name: "Tom Araya",
+        html: "<img class='player-img available-player' src='assets/images/tom-araya.jpg'><div>Tom Araya</div>"
+      },
+
+      scottIan: {
+        name: "Scott Ian",
+        html: "<img class='player-img' src='assets/images/scott-ian.jpg'><div>Scott Ian</div>"
+      }
+    }
+
+    // var contestants = {
+    //   tomAraya: "<img class='player-img available-player' src='assets/images/tom-araya.jpg'><div>Tom Araya</div>",
+    //   scottIan: "<img class='player-img' src='assets/images/scott-ian.jpg'><div>Scott Ian</div>",
+    //   daveMustaine: "<img class='player-img' src='assets/images/dave-mustaine.jpg'><div>Dave Mustaine</div>",
+    //   alexSkolnick: "<img id='alex-skolnick' class='player-img available-player' src='assets/images/alex-skolnick.jpg'><div>Alex Skolnick</div>"
+    // }
+
+    if (false) {
+      $("#player-1").html(contestants.scottIan.html);
+    }
+    else {
+      $("#player-1").html(contestants.tomAraya.html);
+    }
+  </script>
+
+  <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
