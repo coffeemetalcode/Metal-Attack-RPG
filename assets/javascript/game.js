@@ -96,32 +96,38 @@ function gamePlay() {
   defenderHealth = defender.health;
 
 
-  for (i = 1; i < numDefenders; i++) {
-    $("#attack-btn").on("click", function () {
-      if (!(playerHealth < 1) || !(defenderHealth < 1)) {
-        playerHealth = (playerHealth - counterAttack);
-        defenderHealth = (defenderHealth - attack);
-        attack = (attack + player.attack);
-        result();
-      }
-      else if (playerHealth <= 0) {
-        result();
-        console.log(player.name + " died");
-      }
-      else if (defenderHealth <= 0) {
-        result();
-        console.log(defender.name + " died.");
-        defender = alexSkolnick;
-        console.log("new defender: " + defender.name);
-        console.log(defender.name)
-        console.log(defender.counterAttack);
-      }
-    })
-  }
+  // for (i = 1; i < numDefenders; i++) {
+
+  $("#attack-btn").on("click", function () {
+    // while (numDefenders > 2) {
+    if (!(playerHealth < 1) || !(defenderHealth < 1)) {
+      playerHealth = (playerHealth - counterAttack);
+      defenderHealth = (defenderHealth - attack);
+      attack = (attack + player.attack);
+      result();
+    }
+    else if (playerHealth <= 0) {
+      result();
+      console.log(player.name + " died");
+    }
+    else if (defenderHealth <= 0) {
+      numDefenders--;
+      result();
+      console.log(defender.name + " died.");
+      defender = alexSkolnick;
+      console.log("new defender: " + defender.name);
+      // console.log(defender.name)
+      // console.log(defender.counterAttack);
+    }
+  })
 }
+// }
 
 gamePlay();
 
 // I really bit off a chunk here, going for the "challenge" assignment.
 // I'm going to keep hacking away at it until it works. Right now it's
 // somewhere between "oil burning jalopy" and "minimum viable product"
+// While I looked to others' solutions for inspiration, I resisted
+// outright copying and pasting a whole file from the dozen or so Star
+// Wars RPGs that pop up in the top of a Google search.
