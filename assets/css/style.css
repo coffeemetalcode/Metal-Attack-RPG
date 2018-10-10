@@ -37,11 +37,7 @@ img {
 .character {
   display: inline-block;
   cursor: pointer;
-  background: transparent;
-  /* background-color: white; */
-  /* border-color: green;
-  border-style: solid;
-  border-width: 3px; */
+  background-color: #cccccca1;
 }
 
 .character-image {
@@ -62,31 +58,20 @@ img {
 #available-to-attack-section .character {
   display: inline-block;
   cursor: pointer;
-  /* background-color: red;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px; */
 }
 
 .enemy {
   display: inline-block;
   cursor: pointer;
-  /* background-color: red;
-  border-color: black;
-  border-style: solid;
-  border-width: 1px; */
 }
 
 #action .character {
-  /* color: white; */
-  background: transparent;
-  /* background-color: black; */
+  background-color: #cccccca1;
+  /* margin: 5px; */
 }
 
 .target-enemy {
-  /* color: white; */
-  background: transparent ;
-  /* background-color: black; */
+  background-color: #cccccca1;
 }
 
 #selected-character {
@@ -131,4 +116,9 @@ button {
 
 #turn-counter {
   font-size: 150%;
+}
+
+#game-message {
+  margin: 25px;
+  height: 195px;
 }
