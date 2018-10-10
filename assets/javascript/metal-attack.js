@@ -185,6 +185,7 @@ $(document).ready(function() {
 
       // Then render our selected character and our combatants.
       updateCharacter(attacker, "#selected-character");
+      renderMessage(`${attacker.name} is your avatar!`)
       renderEnemies(combatants);
     }
   });
@@ -200,10 +201,10 @@ $(document).ready(function() {
       dRingMusic = new Audio(defender.clips[0]);
       dRingMusic.play();
       updateCharacter(defender, "#defender");
-
       // remove element as it will now be a new defender
       $(this).remove();
       clearMessage();
+      renderMessage(`${defender.name} is your rival!`);
     }
   });
 
@@ -252,7 +253,8 @@ $(document).ready(function() {
         // We call the restartGame function to allow the user to restart the game and play again.
         if (attacker.health <= 0) {
           clearMessage();
-          restartGame("You have been vanquished!");
+          restartGame();
+          renderMessage('You have been vanquished');
           $("#attack-button").off("click");
         }
       } else {
@@ -263,7 +265,7 @@ $(document).ready(function() {
         var gameStateMessage =
           "You have vanquished " +
           defender.name +
-          ", you may choose another rival.";
+          ". You may choose another rival.";
         renderMessage(gameStateMessage);
 
         // Increment your kill count.
@@ -274,7 +276,8 @@ $(document).ready(function() {
         if (killCount >= combatants.length) {
           clearMessage();
           $("#attack-button").off("click");
-          restartGame("Your reign supreme!");
+          restartGame();
+          renderMessage('You reign supreme!');
         }
       }
       // Increment turn counter. This is used for determining how much damage the player does.
