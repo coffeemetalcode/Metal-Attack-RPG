@@ -1,0 +1,37 @@
+**** alex-skolnick ****
+
+time-is-coming, 8*
+eerie-inhabitants.mp3, 9
+falling-fast.mp3, 11
+hypnosis.mp3, 9
+practice-preach.mp3, 6
+
+**** dave-mustaine ****
+
+holy-wars.mp3, 11*
+five-magics.mp3, 6
+head-crusher.mp3 7
+lucretia.mp3, 6
+lucretia2.mp3, 6
+
+**** scott-ian ****
+
+medusa.mp3, 13*
+be-all-end-all.mp3, 11
+caught-in-a-mosh.mp3, 11
+make-me-laugh.mp3, 10
+
+**** tom-araya ****
+
+angel-of-death.mp3, 10*
+criminally-insane.mp3, 10
+hallowed-point.mp3, 10
+postmortem.mp3, 8
+raining-blood.mp3, 8
+
+**** dave-ellefson ****
+
+peace-sells.mp3, 8*
+dawn-patrol.mp3, 13
+five-magics.mp3, 8
+poison-cure.mp3, 7

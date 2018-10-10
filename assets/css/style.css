@@ -1,19 +1,134 @@
 body {
-  font-size: 135%;
+  font-family: "Special Elite", Courier, monospace;
+  font-size: 115%;
+  background-image: url("../images/fire-and-flames.jpg");
+  background-position: center;
   width: 960px;
   margin: auto;
-  background-image: url(../images/flames.jpg);
   opacity: 50%;
-  /* background-color: #cccccc */
-  /* text-align: center; */
 }
 
-.container {
+.p-text {
+  font-size: 150%;
+}
+
+img {
+  width: 200px;
+  height: 135px;
+  border-radius: 95%;
+}
+
+.transparent-bkg {
+  background-color: #cccccca1;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.section-title {
+  font-size: 200%;
+}
+
+.main-section-title {
+  font-family: 'Rock Salt', cursive;
+  font-size: 300%;
   text-align: center;
 }
 
-.player-img {
-  width: 195px;
+.character {
+  display: inline-block;
+  cursor: pointer;
+  background: transparent;
+  /* background-color: white; */
+  /* border-color: green;
+  border-style: solid;
+  border-width: 3px; */
+}
+
+.character-image {
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.character-name {
+  text-align: center;
+}
+
+.character-health {
+  text-align: center;
+}
+
+#available-to-attack-section .character {
+  display: inline-block;
+  cursor: pointer;
+  /* background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px; */
+}
+
+.enemy {
+  display: inline-block;
+  cursor: pointer;
+  /* background-color: red;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px; */
+}
+
+#action .character {
+  /* color: white; */
+  background: transparent;
+  /* background-color: black; */
+}
+
+.target-enemy {
+  /* color: white; */
+  background: transparent ;
+  /* background-color: black; */
+}
+
+#selected-character {
+  width: 190px;
   height: 160px;
-  border-radius: 95%;
+}
+
+#attacker {
+  width: 190px;
+  height: 160px;
+}
+
+#defender {
+  width: 190px;
+  height: 160px;
+}
+
+#defender-name {
+  text-align: center;
+}
+
+#defender-health {
+  text-align: center;
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+  border: 0px;
+  border-radius: 8px;
+}
+
+#choose-enemy-button {
+  visibility: hidden;
+}
+
+#restart-button {
+  visibility: hidden;
+}
+
+#turn-counter {
+  font-size: 150%;
 }

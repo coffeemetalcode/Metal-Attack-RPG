@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Added a link to Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Metal Attack</title>
-
+	<meta charset="UTF-8">
+	<title>Metal Attack!</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt|Special+Elite" rel="stylesheet">
+	<!-- Pull Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- Pull Local CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Pull jQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Pull Local JS -->
+	<script type="text/javascript" src="assets/javascript/metal-attack.js"></script>
 </head>
 
 <body>
-  <h1>Metal Attack!</h1>
-  <h2 id="board-message"></h2>
-  <h4>Use Console Log to see how far I got.</h4>
 
-  <div class="container">
-    <div class="row">
-      <div class="available-player tom-araya">
-        <div id="player-1" class="col-sm-3 "></div>
-        <div id="player-1-info"></div>
-      </div>
-      <div class="available-player scott-ian">
-        <div id="player-2" class="col-sm-3"></div>
-        <div id="player-2-info"></div>
-      </div>
-      <div class="available-player dave-mustaine">
-        <div id="player-3" class="col-sm-3"></div>
-        <div id="player-3-info"></div>
-      </div>
-      <div class="available-player alex-skolnick">
-        <div id="player-4" class="col-sm-3"></div>
-        <div id="player-4-info"></div>
-      </div>
-    </div>
-  </div>
+	<div class="main-section-title">Metal Attack!</div>
+	<div id="main-game-section">
+		<!-- Where the characters are initially available to be selected. -->
+		<div class='container'>
+			<div class='row'>
+				<div id="characters-section">
+					<div class="section-title">Select Your Player</div>
+				</div>
+			</div>
+		</div>
 
-  <br>
+		<br>
 
-  <div class="container">
-    <div class="row">
-      <div id="selected-player" class="col-sm-4">
-        <div id="player">Player Placeholder</div>
-        <div id="player-info">Player Info Placeholder</div>
-      </div>
-      <div class="col-sm-4">
-        <button id="attack-btn" type="button" class="btn btn-danger">Shred!</button>
-      </div>
-      <div id="selected-defender" class="col-sm-4">
-        <div id="defender">Defender Placeholder</div>
-        <div id="defender-info">Defender Info Placeholder</div>
-      </div>
-    </div>
-  </div>
+		<!-- Section for our selected character. -->
+		<div class='container'>
+			<div clss='row'>
+				<div id="selected-character-section">
+					<div class="section-title">Your Player</div>
+					<!-- Where our selected character will appear. -->
+					<div id="selected-character"></div>
+				</div>
+			</div>
+		</div>
 
-  <script src="assets/javascript/game.js "></script>
+		<br>
+
+		<!-- Where our enemies available to attack will appear. -->
+		<div class='container'>
+			<div class='row'>
+				<div id="available-to-attack-section">
+					<div class="section-title">Potential Rivals</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="section-title">Face off!</div>
+		<div id="fight-section">
+			<button id="attack-button">Shred!</button>
+		</div>
+
+		<br>
+
+		<div class='container'>
+			<div class='row'>
+				<div class='col-4-sm'>
+					<div id="action">
+						<div class="character-section">
+							<div class="section-title">Rival</div>
+							<!-- Where our defender will appear. -->
+							<div id="defender"></div>
+						</div>
+					</div>
+				</div>
+				<div class='col-8-sm'>
+				</div>
+				<!-- Area for game messages. -->
+				<div id="game-message" class='transparent-bkg'></div>
+			</div>
+		</div>
+	</div>
+
 </body>
 
 </html>
